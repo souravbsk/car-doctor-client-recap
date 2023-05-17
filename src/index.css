@@ -35,7 +35,7 @@ body{
     border-radius: 50%;
     color: white !important;
 }
-.swiper-button-next, .swiper-button-prev:active{
+.swiper-button-next:active, .swiper-button-prev:active{
     background-color: red;
 }
 .swiper-button-next:after, .swiper-button-prev:after{

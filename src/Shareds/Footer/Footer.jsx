@@ -14,7 +14,7 @@ const Footer = () => {
           <p>
           Edwin Diaz is a software and web technologies engineer, a life coach trainer who is also a serial .
           </p>
-          <ul className="flex mt-4 items-center gap-3">
+          <ul className="flex items-center gap-3">
             <Link><li className="px-3 rounded-full py-3 bg-gray-700 "><FaGoogle></FaGoogle></li></Link>
             <Link><li className="px-3 rounded-full py-3 bg-gray-700 "><FaTwitter></FaTwitter></li></Link>
             <Link><li className="px-3 rounded-full py-3 bg-gray-700 "><FaInstagram></FaInstagram></li></Link>
