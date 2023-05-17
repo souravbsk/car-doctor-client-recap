@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+.container{
+    @apply max-w-full md:w-10/12 mx-auto
+}
+.hero-div{
+    @apply rounded-md  overflow-hidden relative
+}
+.primary-btn{
+    @apply btn bg-[#FF3811] border-[#FF3811] rounded-md
+}
+.outline-btn{
+    @apply btn bg-transparent border-white rounded-md
+}
+
+.hero-banner .swiper-button-next, .hero-banner .swiper-button-prev {
+    top: 80% !important;
+    background-color:rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%;
+    color: white !important;
+}
+.team-slider .swiper-button-next, .team-slider .swiper-button-prev {
+    background-color:rgba(100, 99, 99, 0.404);
+    padding: 20px;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%;
+    color: white !important;
+}
+.swiper-button-next, .swiper-button-prev:active{
+    background-color: red;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 18px !important;
+    font-weight: 900;
+}
+.hero-banner .swiper-button-prev{
+    left: 90% !important;
+}
