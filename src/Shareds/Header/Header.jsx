@@ -1,15 +1,34 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import logoBrand from "../../assets/logo.svg"
 import { MagnifyingGlassIcon,ShoppingBagIcon } from '@heroicons/react/24/solid'
+import { AuthContext } from "../../Providers/AuthProvider";
 
 const Header = () => {
+
+  const {logOut,user} = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logOut()
+    .then(() => {
+
+    })
+    .catch( err => {
+      console.log(err.message);
+    })
+  }
+
   const navLink = <>
   <li><Link to="/" className="font-semibold">Home</Link></li>
-  <li><Link to="/about" className="font-semibold">About</Link></li>
-  <li><Link to="/services" className="font-semibold">Services</Link></li>
-  <li><Link to="/blog" className="font-semibold">Blog</Link></li>
+  <li><Link to="/all-service" className="font-semibold">All Service</Link></li>
+  <li><Link to="/add-service" className="font-semibold">Add Services</Link></li>
+  <li><Link to="/bookings" className="font-semibold">Bookings</Link></li>
   <li><Link to="/contact" className="font-semibold">Contact</Link></li>
+  <li>
+    {
+      user ? <button className="btn text-white bg-red-600" onClick={handleLogOut}>LogOut</button> :<Link to="/login" className="font-semibold">Login</Link>
+    }
+  </li>
   </>;
 
   return (

@@ -26,7 +26,7 @@ const OurTeams = () => {
   };
 
   return (
-    <div className="mt-32">
+    <div className="md:mt-32  mt-16">
       <HeadingText headingText={headingText}></HeadingText>
       <div>
         <Swiper
@@ -42,7 +42,7 @@ const OurTeams = () => {
               spaceBetween: 10,
             },
             "@0.75": {
-              slidesPerView: 2,
+              slidesPerView: 1,
               spaceBetween: 20,
             },
             "@1.00": {

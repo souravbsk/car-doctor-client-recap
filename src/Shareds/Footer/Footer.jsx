@@ -5,11 +5,11 @@ import{FaGoogle,FaTwitter,FaInstagram,FaLinkedin} from "react-icons/fa"
 
 const Footer = () => {
   return (
-    <footer className="bg-black py-32 ">
-      <div className="footer container text-white">
-        <div className="max-w-full w-80">
+    <footer className="bg-black mt-16 md:mt-32 py-16 px-5 md:py-32 ">
+      <div className="footer  container text-white">
+        <div className="max-w-full md:w-80">
          <Link>
-         <img className="max-w-full w-28 h-20" src={logoBrand} alt="" />
+         <img className="max-w-full md:w-28 h-20" src={logoBrand} alt="" />
          </Link>
           <p>
           Edwin Diaz is a software and web technologies engineer, a life coach trainer who is also a serial .
